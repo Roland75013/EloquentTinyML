@@ -8,7 +8,7 @@
 //#include "mnist14x14-light.h"
 //#include "14x14sampledigit96.h"
 #include "mnist.h"
-#include "sampledigit2.h"
+#include "sampledigit2.h"  // the digit to recognize
 
 
 #define NUMBER_OF_INPUTS 28*28
@@ -48,7 +48,7 @@ void loop() {
         Serial.printf("%f  ",output[i]);
         }
     Serial.println();
-    Serial.printf("%d\n",maxi);
+    Serial.printf("The digit is: %d\n",maxi);
  
 //    delay(1000);
 }
